@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RPS-Multiplayer</title>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <script src="assets/index.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <pre id = "object"></pre>
+
+
+
+    <div id="container">
+      <header>
+        <h1>Rock Paper Scissors!</h1>
+      </header>
+
+      <div class="score board">
+        <h3>score board</h3>
+        <div id="user-label" class="badge"><h4>user</h4></div>
+        <span id="user-score">0</span>
+        <div id="computer-label" class="badge"><h4>comp</h4></div>
+        <!-- span tags are inline elements -->
+        <span id="comp-score">0</span>
+      </div>
+
+      <div class="result">
+        <h4>Paper (somehow) beats rock! You win!</h4>
+      </div>
+
+      <div class="choices">
+        <div class="choice" id="r">
+          <img src="assets/images/rock-drawing.png" alt="" />
+        </div>
+        <div class="choice" id="p">
+          <img src="assets/images/paper-drawing.png" alt="" />
+        </div>
+        <div class="choice" id="s">
+          <img src="assets/images/scissor-drawing.png" alt="" />
+        </div>
+      </div>
+      <p id="action-message">make your move</p>
+    </div>
+  </body>
+</html>
